@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lt9-6c-4hw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86X-Pb-62T">
+                                        <rect key="frame" x="112" y="10" width="151" height="30"/>
+                                        <color key="backgroundColor" red="0.49587678909301758" green="0.91126054525375366" blue="0.42237114906311035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="joQ-Hd-u0h"/>
+                                            <constraint firstAttribute="width" constant="151" id="oDJ-Mp-6cV"/>
+                                        </constraints>
+                                        <state key="normal" title="假装有一排按钮"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88627457620000005" green="0.99607849120000003" blue="0.32549020649999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="U4T-e2-6ko"/>
+                                    <constraint firstItem="86X-Pb-62T" firstAttribute="centerY" secondItem="lt9-6c-4hw" secondAttribute="centerY" id="iI3-4J-Lf0"/>
+                                    <constraint firstItem="86X-Pb-62T" firstAttribute="centerX" secondItem="lt9-6c-4hw" secondAttribute="centerX" id="wav-FV-CkW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V03-rS-zsu">
+                                <rect key="frame" x="0.0" y="613" width="375" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8w-8r-230">
+                                        <rect key="frame" x="112" y="12" width="151" height="30"/>
+                                        <color key="backgroundColor" red="0.49587678909301758" green="0.91126054525375366" blue="0.42237114906311035" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="151" id="Mer-8m-cA8"/>
+                                            <constraint firstAttribute="height" constant="30" id="yiN-Zv-8zg"/>
+                                        </constraints>
+                                        <state key="normal" title="假装有一排按钮"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88627457620000005" green="0.99607849120000003" blue="0.32549020649999999" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstItem="f8w-8r-230" firstAttribute="centerX" secondItem="V03-rS-zsu" secondAttribute="centerX" id="033-dX-V0a"/>
+                                    <constraint firstAttribute="height" constant="54" id="7pz-tk-SX3"/>
+                                    <constraint firstItem="f8w-8r-230" firstAttribute="centerY" secondItem="V03-rS-zsu" secondAttribute="centerY" id="K9d-i0-FBB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="lt9-6c-4hw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6zj-OK-BEP"/>
+                            <constraint firstItem="lt9-6c-4hw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V6Q-nu-Quh"/>
+                            <constraint firstAttribute="trailing" secondItem="V03-rS-zsu" secondAttribute="trailing" id="XJ1-5j-P0q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V03-rS-zsu" secondAttribute="bottom" id="kM0-ce-h3k"/>
+                            <constraint firstAttribute="trailing" secondItem="lt9-6c-4hw" secondAttribute="trailing" id="oP4-Hk-bzT"/>
+                            <constraint firstItem="V03-rS-zsu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vMe-z4-nkh"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1Nm-23-xYO" appends="YES" id="FBs-si-uoD"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="bottomTollView" destination="V03-rS-zsu" id="NIi-TH-RUX"/>
+                        <outlet property="bottomViewBotCanstraint" destination="kM0-ce-h3k" id="tdV-gV-4zn"/>
+                        <outlet property="tap" destination="1Nm-23-xYO" id="Cxi-4U-gAu"/>
+                        <outlet property="topToolView" destination="lt9-6c-4hw" id="wXo-qa-MbM"/>
+                        <outlet property="topViewtopCanstraint" destination="V6Q-nu-Quh" id="5CH-A5-3PO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1Nm-23-xYO">
+                    <connections>
+                        <action selector="singleTap:" destination="BYZ-38-t0r" id="xgP-ch-m89"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
